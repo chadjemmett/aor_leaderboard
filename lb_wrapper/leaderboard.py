@@ -1,18 +1,17 @@
 import requests
-
+from stage_dict import stages
+chad_id = "Switch_C932B380835E956A"
 URL = "https://www.funselektorfun.com/artofrally/leaderboard"
 
 
-# r = requests.get("https://www.funselektorfun.com/artofrally/leaderboard/Finland_Stage_1_Forward_Dry_60s/0/1")
-
-# print(r.text)
-
 
 def top_ten(area, stage, direction, wx, group):
-    r = requests.get(f"{URL}/{area}_Stage_{stage}_{direction}_{wx}_{group}/0/1")
-    return r.text
+    stage = stages[area.title()][stage.title()]
+    # print(stage)
+    url = f"{URL}/{area}_Stage_{stage}_{direction}_{wx}_{group}/0/5"
+    print(url)
+    r = requests.get(url)
+    return r.json()
 
-
-
-
-print(top_ten('Finland', '1', 'Forward', 'Dry', '60s'))
+print(top_ten('japan', 'Nikko', 'Forward', 'Dry', '60s'))
+# https://github.com/Theaninova/ArtOfRallyLeaderboardAPI/tree/master/leaderboard-connection/leaderboard-string

@@ -1,3 +1,5 @@
 .pyc
 .sql
-.DS_store
+.DS_Store
+__pycache__
+
