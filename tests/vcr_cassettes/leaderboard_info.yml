@@ -11,20 +11,17 @@ interactions:
       User-Agent:
       - python-requests/2.28.2
     method: GET
-    uri: https://www.funselektorfun.com/artofrally/leaderboard/Finland_Stage_1_Forward_Dry_60s/0/2
+    uri: https://www.funselektorfun.com/artofrally/leaderboard/Finland_Stage_3_Reverse_Wet_60s/0/5
   response:
     body:
-      string: '{"result":0,"leaderboard":[{"uniqueID":32,"userName":"Myth","rank":1,"score":77630,"country":9,"carID":0,"replayData":"9tpKFvCAWJ6OMmpXl3GN-UVBg2s","platformID":2,"userID":"76561198009321752"},{"uniqueID":51080,"userName":"Proporo","rank":2,"score":78650,"country":52,"carID":0,"replayData":"nPEZLtM2Jm8ZJVxVHfW-glsHMQo","platformID":2,"userID":"76561197960981627"},{"uniqueID":1882,"userName":"Get
-        Goblinated","rank":3,"score":78805,"country":166,"carID":5,"replayData":"L-amfbxZ3p250r4w-JjE_ZucalM","platformID":2,"userID":"76561198000831544"},{"uniqueID":29,"userName":"Lee
-        Boon","rank":4,"score":78986,"country":77,"carID":0,"replayData":"fLdg3t_sWuQQKMyQx7kDLEgwE50","platformID":2,"userID":"76561198031929915"},{"uniqueID":38,"userName":"PlayerZ","rank":5,"score":79338,"country":98,"carID":2,"replayData":"3ReAvxql99hBBdioV7f5AUuI2ew","platformID":2,"userID":"76561198262925215"},{"uniqueID":62473,"userName":"turbo","rank":6,"score":79572,"country":165,"carID":0,"replayData":"3vIJ89sYUWSPexuWGx6nahr5VzQ","platformID":2,"userID":"76561198089118617"},{"uniqueID":2561,"userName":"kk","rank":7,"score":79826,"country":79,"carID":0,"replayData":"mlPg3OUHrFv8ICxxeSIkHEaHdTA","platformID":2,"userID":"76561198167893361"},{"uniqueID":47430,"userName":"lemonheadiv","rank":8,"score":79867,"country":77,"carID":4,"replayData":"lvQ6A5SbAn0e3z1ErtxOoHR108k","platformID":2,"userID":"76561198009056971"},{"uniqueID":2936,"userName":"Wesley
-        Daggleston","rank":9,"score":79888,"country":166,"carID":0,"replayData":"cwz77rkg_DpkPP2Ar972BZayB3o","platformID":2,"userID":"76561198282777819"},{"uniqueID":10308,"userName":"Michelelol","rank":10,"score":80079,"country":77,"carID":0,"replayData":"XFdq6aAqXEgDL6X8b5gdJeXP_S8","platformID":3,"userID":""}]}'
+      string: '{"result":0,"leaderboard":[{"uniqueID":61,"userName":"courtney","rank":1,"score":182017,"country":166,"carID":2,"replayData":"dt7-h01v2Sa7OPgvnpDOnO6igys","platformID":5,"userID":"Switch_2273DD25A9A65AFB"},{"uniqueID":78,"userName":"P.M.","rank":2,"score":197453,"country":165,"carID":1,"replayData":"9uoXTiLNeFo9VPF8AAskbKBxPfY","platformID":5,"userID":"Switch_AFBB26AFD3ADA57B"},{"uniqueID":341,"userName":"Szymi","rank":3,"score":202854,"country":128,"carID":6,"replayData":"Wn186_2NvE9LOmeDt-39E1zJZ-0","platformID":5,"userID":"Switch_C84F6DE524C16725"},{"uniqueID":243,"userName":"GoldenM","rank":4,"score":205275,"country":53,"carID":6,"replayData":"-u3_Vs3aIiGSGIzYmdfjBrcEjIQ","platformID":5,"userID":"Switch_6AEA5F9895CBAEC4"},{"uniqueID":122,"userName":"Fal","rank":5,"score":205440,"country":57,"carID":6,"replayData":"02PbbY8ZEnpDr54E8O0zWNRWNzc","platformID":5,"userID":"Switch_ED39B211DA291E"},{"uniqueID":214,"userName":"jo4style","rank":6,"score":209375,"country":15,"carID":1,"replayData":"dywfylFv3QdUMZYGVxWIGY0ptBY","platformID":5,"userID":"Switch_A5C2C01512482559"},{"uniqueID":85,"userName":"Andy","rank":7,"score":209927,"country":48,"carID":0,"replayData":"pcUducMmMw6LjvCg1zbAJL5JadA","platformID":5,"userID":"Switch_CA22E8F8E6DE2E7D"},{"uniqueID":294,"userName":"ricksta","rank":8,"score":216374,"country":48,"carID":6,"replayData":"_a0H-_PJWA9ep2TI9TIEhV5hlQY","platformID":5,"userID":"Switch_B9DEF33FE482F742"},{"uniqueID":181,"userName":"Down","rank":9,"score":220556,"country":23,"carID":0,"replayData":"EnV9-dQLkjgiT2aG_S72DZgtaBo","platformID":5,"userID":"Switch_EF9EA46A785CCA8B"},{"uniqueID":384,"userName":"Tejan","rank":10,"score":221566,"country":166,"carID":5,"replayData":"TzGJ267q0nGzz7AuyY_WM8Iab1Q","platformID":5,"userID":"Switch_37F9E011EA420FF2"}]}'
     headers:
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 27 Feb 2023 20:19:11 GMT
+      - Wed, 08 Mar 2023 20:20:24 GMT
       Transfer-Encoding:
       - chunked
       X-Powered-By:

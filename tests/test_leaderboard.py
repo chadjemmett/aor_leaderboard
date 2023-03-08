@@ -9,6 +9,13 @@ def user_keys():
 
 @vcr.use_cassette('tests/vcr_cassettes/leaderboard_info.yml')
 def test_top_ten(user_keys):
-    top_10 = top_ten("Finland", "1", "Forward", "Dry", "60s")
+    top_10 = top_ten("Finland", "Palus", "60s", direction="Reverse", wx="Wet")
     assert isinstance(top_10, dict)
     assert set(user_keys).issubset(top_10['leaderboard'][0].keys())
+
+@vcr.use_cassette('tests/vcr_cassettes/leaderboard_uppercase.yml')
+def test_capitalized_word(user_keys):
+    top_10 = top_ten("finland", "palus", "60s","forward", "dry")
+    assert isinstance(top_10, dict)
+    assert top_10 != {'result': 0, 'leaderboard': []}
+    assert  set(user_keys).issubset(top_10['leaderboard'][0].keys())

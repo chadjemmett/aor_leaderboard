@@ -2,7 +2,7 @@ stages = {
         'Finland': {
             "Noormarku": '1',
             "Lamppi": '2',
-            "palus": '3',
+            "Palus": '3',
             "Lassila": '4',
             "Kairila": '5',
             "Haapajärvi": '6',
@@ -22,8 +22,8 @@ stages = {
             "Nasu highland": "1",
             "Mount asama":"2",
             "Mount akagi": "3",
-            "nikko":"4",
-            "tsumagoi": "5",
+            "Nikko":"4",
+            "Tsumagoi": "5",
             "Mount haruna":"6"
 
 
@@ -32,3 +32,5 @@ stages = {
         'Germany': {},
         'Indonesia': {},
 }
+
+groups = {'group2': "60s", 'group3': "70s"}

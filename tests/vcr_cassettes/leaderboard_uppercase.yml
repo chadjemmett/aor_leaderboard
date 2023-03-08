@@ -1,0 +1,32 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://www.funselektorfun.com/artofrally/leaderboard/Finland_Stage_3_Forward_Dry_60s/0/5
+  response:
+    body:
+      string: "{\"result\":0,\"leaderboard\":[{\"uniqueID\":43771,\"userName\":\"Lesiakower\",\"rank\":1,\"score\":157914,\"country\":128,\"carID\":3,\"replayData\":\"J3xTijZ10bCXdixemO-riqjW9Bo\",\"platformID\":5,\"userID\":\"Switch_29E2D0B345D72E75\"},{\"uniqueID\":31131,\"userName\":\"mchammer23\",\"rank\":2,\"score\":158109,\"country\":166,\"carID\":2,\"replayData\":\"ynyBbxJXFTjs9YYvTDdlgi942uA\",\"platformID\":5,\"userID\":\"Switch_D31498C58FE5D40\"},{\"uniqueID\":33767,\"userName\":\"Lutz\",\"rank\":3,\"score\":162857,\"country\":53,\"carID\":2,\"replayData\":\"rlcRXOGh57zbhC_7RLGLq8hO3DY\",\"platformID\":5,\"userID\":\"Switch_90FCB7F06E94111B\"},{\"uniqueID\":17711,\"userName\":\"Pixy\",\"rank\":4,\"score\":163204,\"country\":27,\"carID\":3,\"replayData\":\"UYUtX9PyqJaYd8cFoOlI_0zRHx4\",\"platformID\":5,\"userID\":\"Switch_6A3F91FD6D5286AD\"},{\"uniqueID\":5203,\"userName\":\"srbldzr\",\"rank\":5,\"score\":163316,\"country\":114,\"carID\":2,\"replayData\":\"-a5xmsM-gVsVCHvhPHJULHt0F5w\",\"platformID\":5,\"userID\":\"Switch_7658C7E11011E12E\"},{\"uniqueID\":28600,\"userName\":\"sushibowl\",\"rank\":6,\"score\":165102,\"country\":114,\"carID\":0,\"replayData\":\"LWPs4SlzYH4EbkZ8pwG8GRpHnIg\",\"platformID\":5,\"userID\":\"Switch_6D1E6F2D5E018DF1\"},{\"uniqueID\":11898,\"userName\":\"Liscotti\",\"rank\":7,\"score\":166896,\"country\":27,\"carID\":4,\"replayData\":\"ouNQpGoChUmXFdtS0iyzwTBcLFI\",\"platformID\":5,\"userID\":\"Switch_7C753DE1A48AA274\"},{\"uniqueID\":51282,\"userName\":\"Moogleinho\",\"rank\":8,\"score\":166967,\"country\":57,\"carID\":4,\"replayData\":\"q515jsUflBN7OOWjNWgR0IbB3Kg\",\"platformID\":5,\"userID\":\"Switch_C4CB1271DE1D2AF6\"},{\"uniqueID\":5342,\"userName\":\"\u304B\u305D\u304F\",\"rank\":9,\"score\":166968,\"country\":165,\"carID\":2,\"replayData\":\"yCEAg451omwywFvo10EyN7sHwM4\",\"platformID\":5,\"userID\":\"Switch_CB6ECE429B88602F\"},{\"uniqueID\":19178,\"userName\":\"Gertjan\",\"rank\":10,\"score\":167019,\"country\":114,\"carID\":0,\"replayData\":\"0oXg5no0Luxr0ssZ0r8YX3sAIIE\",\"platformID\":5,\"userID\":\"Switch_BD278C56C320F8EC\"}]}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 08 Mar 2023 20:20:25 GMT
+      Transfer-Encoding:
+      - chunked
+      X-Powered-By:
+      - Express
+    status:
+      code: 200
+      message: OK
+version: 1
