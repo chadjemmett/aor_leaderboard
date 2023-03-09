@@ -1,5 +1,5 @@
 from pytest import fixture
-from lb_wrapper import top_ten
+from src.aor_leaderboard_py import top_ten
 import vcr
 
 

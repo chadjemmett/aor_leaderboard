@@ -1,6 +1,7 @@
 import requests
 from .stage_dict import stages, groups
-chad_id = "Switch_C932B380835E956A"
+PlATFORM_DEFAULT = "5"
+MY_ID = "Switch_C932B380835E956A"
 URL = "https://www.funselektorfun.com/artofrally/leaderboard"
 
 def top_ten(area, stage, group, direction="Forward", wx="Dry"):
@@ -11,7 +12,7 @@ def top_ten(area, stage, group, direction="Forward", wx="Dry"):
     direction = direction.title()
     wx = wx.title()
     #make request and return
-    url = f"{URL}/{area}_Stage_{stage}_{direction}_{wx}_{group}/0/5"
+    url = f"{URL}/{area}_Stage_{stage}_{direction}_{wx}_{group}/0/{PlATFORM_DEFAULT}"
     r = requests.get(url)
     return r.json()
 
