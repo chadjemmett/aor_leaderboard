@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aor-leaderboard-py"
+version = "0.0.0"
+authors = [{name="Chad Jemmett", email="chad.jemmett@gmail.com"}]
+description = "Python wapper for the Art of Rally leaderboard API"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+
+[project.urls]
+"Homepage" = "https://github.com/chadjemmett/aor_leaderboard"
