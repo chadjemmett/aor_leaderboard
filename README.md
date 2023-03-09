@@ -21,15 +21,15 @@ leaderboard. You can check your standings in game, but this is for getting leade
 
 ```
  Right now the default platform is Steam. These are all the platforms and their codes.
-    ```
+ 
+ 
       Epic: 0,
       GOG: 1,
       Steam: 2,
       Xbox: 3,
-      PlayStation: 4,:
-      Nintendo: 5,:
+      PlayStation: 4,
+      Nintendo: 5,
       None: 6
-    ```
 
 The values for the Group variable are as follows:
 ```
