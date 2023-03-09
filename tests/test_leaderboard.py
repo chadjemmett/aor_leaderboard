@@ -9,7 +9,7 @@ def user_keys():
 
 @vcr.use_cassette('tests/vcr_cassettes/leaderboard_info.yml')
 def test_top_ten(user_keys):
-    top_10 = board.top_ten("Finland", "Palus", "60s", direction="Reverse", wx="Wet")
+    top_10 = board.top_ten("Finland", "Palus", "60s", direction="Reverse", wx="Rain")
     assert isinstance(top_10, dict)
     assert set(user_keys).issubset(top_10['leaderboard'][0].keys())
     assert len(top_10['leaderboard']) == 10

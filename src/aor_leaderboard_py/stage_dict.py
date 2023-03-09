@@ -34,3 +34,4 @@ stages = {
 }
 
 groups = {'group2': "60s", 'group3': "70s"}
+weather = {'Rain': "Wet", "Snow": "Wet", "Dry": "Dry"}

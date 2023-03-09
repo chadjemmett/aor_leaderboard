@@ -5,24 +5,10 @@ leaderboard. You can check your standings in game, but this is for getting leade
 
 ### Usage
 
-* Installation: `tbd`
-* `from aor_leaderboard_py import AOR_Leaderboard_py`
-* `board = AOR_Leaderboard_py(default_platform="2")
-* Right now the default platform is Steam. These are all the platforms and their codes.
-    ```
-      Epic: 0,
-      GOG: 1,
-      Steam: 2,
-      Xbox: 3,
-      PlayStation: 4,:
-      Nintendo: 5,:
-      None: 6
-    ```
-
-
-```
-
-
+#### Installation: `tbd`
+ ```
+>>> from aor_leaderboard_py import AOR_Leaderboard_py`
+>>> board = AOR_Leaderboard_py(default_platform="2")`
 >>> board.top_ten("Finland", "Palus", "60s", direction="Forward", wx="Dry")
 
  {'result': 0, 'leaderboard': 
@@ -34,34 +20,36 @@ leaderboard. You can check your standings in game, but this is for getting leade
  {'uniqueID': 384, 'userName': 'TXXXn', 'rank': 10, 'score': 221566, 'country': 166, 'carID': 5, 'replayData': 'TzGJ267q0XXXXXXXXY_WM8Iab1Q', 'platformID': 5, 'userID': 'Switch_37F9E0XXXXX20FF2'}]
 
 ```
+ Right now the default platform is Steam. These are all the platforms and their codes.
+    ```
+      Epic: 0,
+      GOG: 1,
+      Steam: 2,
+      Xbox: 3,
+      PlayStation: 4,:
+      Nintendo: 5,:
+      None: 6
+    ```
 
 The values for the Group variable are as follows:
 ```
   "60s",
-
   "70s", 
-
   "80s",
-
   "GroupB",
-
   "GroupS",
-
   "GroupA",
-
   "Bonus_Vans",
-
   "Bonus_Monkey",
-
   "Bonus_Dakar",
-
   "Bonus_Logging"
 
 ```
 
 
-# Area, Stage and group are required. The default for stages is direction = Forward. And wx = Default
-# The two options for Direction is Forward or Reverse, and Wx's options are Wet or Dry 
+Area, Stage and group are required. The default for stages is direction = Forward. And wx = Default
+
+The two options for Direction is Forward or Reverse, and Wx's options are Wet or Dry 
 
 
 ### Thanks to...

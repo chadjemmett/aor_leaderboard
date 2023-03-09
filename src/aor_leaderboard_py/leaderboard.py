@@ -1,6 +1,6 @@
 import requests
 import os
-from .stage_dict import stages, groups
+from .stage_dict import stages, groups, weather
 
 class AOR_Leaderboard_py():
 
@@ -15,7 +15,7 @@ class AOR_Leaderboard_py():
         stage = stage.title()
         stage = stages[area][stage] 
         direction = direction.title()
-        wx = wx.title()
+        wx = weather[wx.title()]
         #make request and return
         url = f"{self.url}/{area}_Stage_{stage}_{direction}_{wx}_{group}/0/{self.default_platform}"
         r = requests.get(url)
