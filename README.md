@@ -7,8 +7,8 @@ leaderboard. You can check your standings in game, but this is for getting leade
 
 #### Installation: `tbd`
  ```
->>> from aor_leaderboard_py import AOR_Leaderboard_py`
->>> board = AOR_Leaderboard_py(default_platform="2")`
+>>> from aor_leaderboard_py import art_of_rally_leaderboard Leaderboard`
+>>> board = Leaderboard(default_platform="2")`
 >>> board.top_ten("Finland", "Palus", "60s", direction="Forward", wx="Dry")
 
  {'result': 0, 'leaderboard': 
@@ -21,7 +21,7 @@ leaderboard. You can check your standings in game, but this is for getting leade
 
 ```
  Right now the default platform is Steam. These are all the platforms and their codes.
- 
+ You can set the default when invoking the class. `board = Leaderboard(default_platform=4)` if you want to get leaderboards for Playstation.
  
       Epic: 0,
       GOG: 1,
@@ -47,7 +47,7 @@ The values for the Group variable are as follows:
 ```
 
 
-Area, Stage and group are required. The default for stages is direction = Forward. And wx = Default
+Area, Stage and group are required. The default for stages is direction = Forward. And wx = Dry
 
 The two options for Direction is Forward or Reverse, and Wx's options are Wet or Dry 
 
