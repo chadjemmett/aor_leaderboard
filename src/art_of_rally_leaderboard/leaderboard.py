@@ -4,7 +4,7 @@ from .stage_dict import stages, groups, weather
 
 class Leaderboard:
 
-    def __init__(self, my_id=None, default_platform="2"):
+    def __init__(self, my_id=None, default_platform=2):
         self.my_id = my_id
         self.default_platform = default_platform
         self.url="https://www.funselektorfun.com/artofrally/leaderboard"
