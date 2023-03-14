@@ -2,7 +2,7 @@ import requests
 import os
 from .stage_dict import stages, groups, weather
 
-class AOR_Leaderboard_py():
+class Leaderboard:
 
     def __init__(self, my_id=None, default_platform="2"):
         self.my_id = my_id
@@ -19,6 +19,13 @@ class AOR_Leaderboard_py():
         #make request and return
         url = f"{self.url}/{area}_Stage_{stage}_{direction}_{wx}_{group}/0/{self.default_platform}"
         r = requests.get(url)
+        r.raise_for_status()
         return r.json()
+
+    def my_standing(self):
+        pass
+
+    def full_list(self):
+        pass
 
 # https://github.com/Theaninova/ArtOfRallyLeaderboardAPI/tree/master/leaderboard-connection/leaderboard-string
