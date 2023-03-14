@@ -1,0 +1,56 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://www.funselektorfun.com/artofralllllly/leaderboard/Finland_Stage_1_Forward_Wet_60s
+  response:
+    body:
+      string: '<!DOCTYPE html>
+
+        <html lang="en">
+
+        <head>
+
+        <meta charset="utf-8">
+
+        <title>Error</title>
+
+        </head>
+
+        <body>
+
+        <pre>Cannot GET /artofralllllly/leaderboard/Finland_Stage_1_Forward_Wet_60s</pre>
+
+        </body>
+
+        </html>
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '197'
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Tue, 14 Mar 2023 21:09:34 GMT
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Express
+    status:
+      code: 404
+      message: Not Found
+version: 1

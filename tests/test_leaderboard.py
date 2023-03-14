@@ -1,7 +1,9 @@
+import pytest
 from pytest import fixture
-from src.aor_leaderboard_py.leaderboard import AOR_Leaderboard_py 
+import requests
+from src.art_of_rally_leaderboard.leaderboard import Leaderboard 
 import vcr
-board = AOR_Leaderboard_py(default_platform="5")
+board = Leaderboard(default_platform=5)
 
 @fixture
 def user_keys():
@@ -21,3 +23,17 @@ def test_capitalized_word(user_keys):
     assert top_10 != {'result': 0, 'leaderboard': []}
     assert  set(user_keys).issubset(top_10['leaderboard'][0].keys())
     assert len(top_10['leaderboard']) == 10
+
+
+@vcr.use_cassette('tests/vcr_cassettes/leaderboard_status_check.yml')
+def test_wrong_status(user_keys):
+    with pytest.raises(Exception) as e:
+        r = requests.get("https://www.funselektorfun.com/artofralllllly/leaderboard/Finland_Stage_1_Forward_Wet_60s")
+        assert e.type == HTTPError
+
+@vcr.use_cassette('tests/vcr_cassettes/leaderboard_key_error.yml')
+def test_wrong_argument_value():
+    with pytest.raises(KeyError):
+        top_10 = board.top_ten("Fonland", "palus", "60s","forward", "dry")
+        
+
