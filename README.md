@@ -1,15 +1,22 @@
 ## Art of Rally Leaderboard Python Library
 
-[Art of Rally](https://www.funselektor.com/) by Fun Selektor is a multi-platform arcade-style racing game. Drivers can compete against other drivers via the
+[Art of Rally](https://www.funselektor.com/) by FunSelektor is a multi-platform arcade-style racing game. Drivers can compete against other drivers via the
 leaderboard. You can check your standings in game, but this is for getting leaderboards from the API endpoint.
+
+Any questions? Contact me on Github at `https://github.com/chadjemmett` and I'm `
+`mini_robber/Chad/Chood` on the Art of Rally Discord.
+
 
 ### Usage
 
-#### Installation: `tbd`
- ```
+*Note: The API URLs are case-sensetive. So if something isn't working capitalize the value you pass into the functions*
+
+#### Installation: ` pip install -i https://test.pypi.org/simple/ aor-leaderboard-py`
+
+ ``` 
 >>> from aor_leaderboard_py import art_of_rally_leaderboard Leaderboard`
 >>> board = Leaderboard(default_platform="2")`
->>> board.top_ten("Finland", "Palus", "60s", direction="Forward", wx="Dry")
+>>> board.top_ten("Finland", "Palus", "Group2", direction="Forward", wx="Dry")
 
  {'result': 0, 'leaderboard': 
 
@@ -33,16 +40,16 @@ leaderboard. You can check your standings in game, but this is for getting leade
 
 The values for the Group variable are as follows:
 ```
-  "60s",
-  "70s", 
-  "80s",
+  "Group2",
+  "Group3", 
+  "Group4",
   "GroupB",
   "GroupS",
   "GroupA",
-  "Bonus_Vans",
-  "Bonus_Monkey",
-  "Bonus_Dakar",
-  "Bonus_Logging"
+  "Vans",
+  "Triwheeler",
+  "Trucks",
+  "Logging"
 
 ```
 

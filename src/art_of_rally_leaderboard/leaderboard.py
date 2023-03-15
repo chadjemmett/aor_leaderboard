@@ -16,6 +16,7 @@ class Leaderboard:
         stage = stages[area][stage] 
         direction = direction.title()
         wx = weather[wx.title()]
+        group = groups[group]
         #make request and return
         url = f"{self.url}/{area}_Stage_{stage}_{direction}_{wx}_{group}/0/{self.default_platform}"
         r = requests.get(url)
