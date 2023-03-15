@@ -3,7 +3,7 @@
 [Art of Rally](https://www.funselektor.com/) by FunSelektor is a multi-platform arcade-style racing game. Drivers can compete against other drivers via the
 leaderboard. You can check your standings in game, but this is for getting leaderboards from the API endpoint.
 
-Any questions? Contact me on Github at `https://github.com/chadjemmett` and I'm `
+Any questions? Contact me on Github at `https://github.com/chadjemmett` and I'm
 `mini_robber/Chad/Chood` on the Art of Rally Discord.
 
 
