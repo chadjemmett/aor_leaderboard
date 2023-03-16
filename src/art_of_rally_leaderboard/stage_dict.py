@@ -1,4 +1,4 @@
-stages = {
+STAGES = {
         'Finland': {
             "Noormarkku": 1,
             "Lamppi": 2,
@@ -64,7 +64,7 @@ stages = {
                 },
 }
 
-groups = {
+GROUPS = {
         'Group2': "60s", 
         'Group3': "70s", 
         'Group4': "80s",
@@ -77,6 +77,6 @@ groups = {
         "Logging": "Bounus_Logging"
 
         }
-weather = {'Rain': "Wet", 
+WEATHER = {'Rain': "Wet", 
             "Snow": "Wet", 
             "Dry": "Dry"}

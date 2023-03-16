@@ -1,6 +1,6 @@
 import requests
 import os
-from .stage_dict import stages, groups, weather
+from .stage_dict import STAGES, GROUPS, WEATHER
 
 class Leaderboard:
 
@@ -13,10 +13,10 @@ class Leaderboard:
         #capitalize all the args
         area = area.title()
         stage = stage.title()
-        stage = stages[area][stage] 
+        stage = STAGES[area][stage] 
         direction = direction.title()
-        wx = weather[wx.title()]
-        group = groups[group]
+        wx = WEATHER[wx.title()]
+        group = GROUPS[group]
         #make request and return
         url = f"{self.url}/{area}_Stage_{stage}_{direction}_{wx}_{group}/0/{self.default_platform}"
         r = requests.get(url)
