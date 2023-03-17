@@ -9,16 +9,16 @@ STAGES = {
             },
         'Sardinia': {
             "Villacidro": 1,
-            "San gavino monreale": 2,
-            "San benedetto": 3,
+            "San Gavino Monreale": 2,
+            "San Benedetto": 3,
             "Gennamari": 4,
-            "Portu maga": 5,
+            "Portu Maga": 5,
             "Montevecchio": 6,
             },
         'Japan': {
-            "Nasu highland": 1,
-            "Mount asama":2,
-            "Mount akagi": 3,
+            "Nasu Highland": 1,
+            "Mount Asama":2,
+            "Mount Akagi": 3,
             "Nikko": 4,
             "Tsumagoi": 5,
             "Mount haruna": 6
@@ -74,7 +74,7 @@ GROUPS = {
         'Vans': "Bonus_Vans",
         "Triwheeler": "Bonus_Monkey",
         "Trucks": "Bonus_Dakar",
-        "Logging": "Bounus_Logging"
+        "Logging": "Bonus_Logging"
 
         }
 WEATHER = {'Rain': "Wet", 
