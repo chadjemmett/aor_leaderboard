@@ -13,10 +13,16 @@ class Leaderboard:
         #capitalize all the args
         area = area.title()
         stage = stage.title()
-        stage = STAGES[area][stage] 
         direction = direction.title()
-        wx = WEATHER[wx.title()]
-        group = GROUPS[group]
+        try:
+            stage = STAGES[area].get(stage) 
+            wx = WEATHER[wx.title()]
+            group = GROUPS[group]
+        except KeyError as e:
+            print("Check your capitalization or spelling. Stage example: San Benedetto. Group Example: GroupB.")
+
+
+            
         #make request and return
         url = f"{self.url}/{area}_Stage_{stage}_{direction}_{wx}_{group}/0/{self.default_platform}"
         r = requests.get(url)
