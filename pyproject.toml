@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "art_of_rally_leaderboard"
-version = "0.1.0"
+version = "0.1.1"
 authors = [{name="Chad Jemmett", email="chad.jemmett@gmail.com"}]
 description = "Python wapper for the Art of Rally leaderboard API"
 readme = "README.md"
