@@ -11,12 +11,13 @@ Any questions? Contact me on Github at `https://github.com/chadjemmett` and I'm
 
 *Note: The API URLs are case-sensetive. So if something isn't working capitalize the value you pass into the functions*
 
-#### Installation: ` pip install -i https://test.pypi.org/simple/ aor-leaderboard-py`
+#### Installation: ` pip install -i https://test.pypi.org/simple/ art-of-rally-leaderboard`
 
  ``` 
->>> from aor_leaderboard_py import art_of_rally_leaderboard Leaderboard`
->>> board = Leaderboard(default_platform="2")`
->>> board.top_ten("Finland", "Palus", "Group2", direction="Forward", wx="Dry")
+import art_of_rally_leaderboard  
+board = art_of_rally_leaderboard.Leaderboard(default_platform="2")
+board.top_ten("Finland", "Palus", "Group2", direction="Forward", wx="Dry")
+print(board)
 
  {'result': 0, 'leaderboard': 
 
