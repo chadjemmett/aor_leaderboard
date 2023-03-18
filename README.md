@@ -9,7 +9,7 @@ Any questions? Contact me on Github at `https://github.com/chadjemmett` and I'm
 
 ### Usage
 
-*Note: The API URLs are case-sensetive. So if something isn't working capitalize the value you pass into the functions*
+*Note: The API URLs are case-sensitive. So if something isn't working capitalize the value you pass into the functions*
 
 #### Installation: ` pip install -i https://test.pypi.org/simple/ art-of-rally-leaderboard`
 
