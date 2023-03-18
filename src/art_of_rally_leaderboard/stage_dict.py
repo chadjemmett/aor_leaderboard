@@ -6,6 +6,7 @@ STAGES = {
             "Lassila": 4,
             "Kairila": 5,
             "Haapajärvi": 6
+            "Haapajarvi": 6
             },
         'Sardinia': {
             "Villacidro": 1,
@@ -21,9 +22,7 @@ STAGES = {
             "Mount Akagi": 3,
             "Nikko": 4,
             "Tsumagoi": 5,
-            "Mount haruna": 6
-
-
+            "Mount Haruna": 6
             },
         'Norway': {
             "Laupstad": 1,
@@ -51,7 +50,6 @@ STAGES = {
             "Ndere Island": 4,
             "Lake Baringo": 5,
             "Lake Nakuru": 6
-
             },
         'Indonesia': {
             "Mount Kawi": 1,
@@ -75,8 +73,8 @@ GROUPS = {
         "Triwheeler": "Bonus_Monkey",
         "Trucks": "Bonus_Dakar",
         "Logging": "Bonus_Logging"
-
         }
+
 WEATHER = {'Rain': "Wet", 
             "Snow": "Wet", 
             "Dry": "Dry"}
