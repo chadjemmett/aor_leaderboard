@@ -9,6 +9,7 @@ class Leaderboard:
         self.default_platform = default_platform
         self.url="https://www.funselektorfun.com/artofrally/leaderboard"
 
+
     def top_ten(self, area, stage, group, direction="Forward", wx="Dry"):
         #capitalize all the args
         area = area.title()

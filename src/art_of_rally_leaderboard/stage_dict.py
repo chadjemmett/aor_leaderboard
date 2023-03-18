@@ -5,7 +5,7 @@ STAGES = {
             "Palus": 3,
             "Lassila": 4,
             "Kairila": 5,
-            "Haapajärvi": 6
+            "Haapajärvi": 6,
             "Haapajarvi": 6
             },
         'Sardinia': {
