@@ -1,80 +1,121 @@
 STAGES = {
         'Finland': {
-            "Noormarkku": 1,
-            "Lamppi": 2,
-            "Palus": 3,
-            "Lassila": 4,
-            "Kairila": 5,
-            "Haapajärvi": 6,
-            "Haapajarvi": 6
+            "noormarkku": 1,
+            "lamppi": 2,
+            "palus": 3,
+            "lassila": 4,
+            "kairila": 5,
+            "haapajärvi": 6,
+            "haapajarvi": 6
             },
         'Sardinia': {
             "Villacidro": 1,
-            "San Gavino Monreale": 2,
-            "San Benedetto": 3,
-            "Gennamari": 4,
-            "Portu Maga": 5,
-            "Montevecchio": 6,
+            "villacidro": 1,
+            "san gavino monreale": 2,
+            "san benedetto": 3,
+            "gennamari": 4,
+            "portu maga": 5,
+            "montevecchio": 6,
             },
         'Japan': {
-            "Nasu Highland": 1,
-            "Mount Asama":2,
-            "Mount Akagi": 3,
-            "Nikko": 4,
-            "Tsumagoi": 5,
-            "Mount Haruna": 6
+            "nasu highland": 1,
+            "mount asama":2,
+            "mount akagi": 3,
+            "nikko": 4,
+            "tsumagoi": 5,
+            "mount haruna": 6
             },
         'Norway': {
-            "Laupstad": 1,
-            "Vestpollen": 2,
-            "Stronstad": 3,
-            "Kvannkjosen": 4,
-            "Grunnfor": 5,
-            "Lake Rostavantn": 6
+            "laupstad": 1,
+            "vestpollen": 2,
+            "stronstad": 3,
+            "kvannkjosen": 4,
+            "grunnfor": 5,
+            "lake rostavantn": 6
             },
 
         'Germany': {
-            "Hockweiler": 1,
-            "Franzenheim": 2,
-            "Holzerath": 3,
-            "Farschweiler": 4,
-            "Mertesdorf": 5,
-            "Gonnesweiler": 6
+            "hockweiler": 1,
+            "franzenheim": 2,
+            "holzerath": 3,
+            "farschweiler": 4,
+            "mertesdorf": 5,
+            "gonnesweiler": 6
 
 
             },
         'Kenya': {
-            "Mount Kenya": 1,
-            "Karura": 2,
-            "Homa Bay": 3,
-            "Ndere Island": 4,
-            "Lake Baringo": 5,
-            "Lake Nakuru": 6
+            "mount kenya": 1,
+            "karura": 2,
+            "homa bay": 3,
+            "ndere island": 4,
+            "lake baringo": 5,
+            "lake nakuru": 6
             },
         'Indonesia': {
-            "Mount Kawi": 1,
-            "Semangka Bay": 2,
-            "Satinda Island": 3,
-            "Oreng Valley": 4,
-            "Sangeang Island": 5,
-            "Kalabakan Valley": 6
+            "mount kawi": 1,
+            "semangka bay": 2,
+            "satinda island": 3,
+            "oreng valley": 4,
+            "sangeang island": 5,
+            "kalabakan valley": 6
 
                 },
 }
 
 GROUPS = {
         'Group2': "60s", 
+        'group2': "60s", 
+
         'Group3': "70s", 
+        'group3': "70s", 
+
         'Group4': "80s",
+        'group4': "80s",
+
         'GroupB': "GroupB",
+        'groupB': "GroupB",
+        'groupb': "GroupB",
+        'Groupb': "GroupB",
+
         'GroupS': "GroupS",
+        'groupS': "GroupS",
+        'groups': "GroupS",
+        'Groups': "GroupS",
+
         'GroupA': "GroupA",
+        'groupA': "GroupA",
+        'groupa': "GroupA",
+        'Groupa': "GroupA",
         'Vans': "Bonus_Vans",
+        'vans': "Bonus_Vans",
         "Triwheeler": "Bonus_Monkey",
+        "triwheeler": "Bonus_Monkey",
         "Trucks": "Bonus_Dakar",
-        "Logging": "Bonus_Logging"
+        "trucks": "Bonus_Dakar",
+        "Logging": "Bonus_Logging",
+        "logging": "Bonus_Logging"
+
         }
 
-WEATHER = {'Rain': "Wet", 
-            "Snow": "Wet", 
-            "Dry": "Dry"}
+WEATHER = {
+        'Rain': "Wet", 
+        'rain': "Wet", 
+
+        "Snow": "Wet", 
+        "snow": "Wet", 
+        
+        "Dry": "Dry",
+        "dry": "Dry"
+        }
+
+DIRECTION  = {
+        "Forward": "Forward",
+        "forward": "Forward",
+        "reverse": "Reverse",
+        "Reverse": "Reverse",
+        "Rev": "Reverse",
+        "rev": "Reverse",
+        "fwd": "Forward",
+        "Fwd": "Forward",
+        }
