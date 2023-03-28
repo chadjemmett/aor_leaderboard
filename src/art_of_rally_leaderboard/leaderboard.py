@@ -1,6 +1,6 @@
 import requests
 import os
-from .stage_dict import STAGES, GROUPS, WEATHER
+from .stage_dict import STAGES, GROUPS, WEATHER, DIRECTION
 
 class Leaderboard:
 
@@ -10,20 +10,23 @@ class Leaderboard:
         self.url="https://www.funselektorfun.com/artofrally/leaderboard"
 
 
-    def top_ten(self, area, stage, group, direction="Forward", wx="Dry"):
-        #capitalize all the args
-        area = area.title()
-        stage = stage.title()
-        self.check_input_cases(area, stage, group)
-        direction = direction.title()
+    def build_url(self, area, stage, group, direction, wx):
         try:
-            stage = STAGES[area].get(stage) 
-            wx = WEATHER[wx.title()]
+            area = area.title()
+            stage = stage.lower()
+            stage = STAGES[area][stage]
             group = GROUPS[group]
+            direction = DIRECTION[direction]
+            wx = WEATHER[wx]
         except KeyError as e:
-            print("Check your capitalization or spelling. Stage example: San Benedetto. Group Example: GroupB.")
-        #make request and return
-        url = f"{self.url}/{area}_Stage_{stage}_{direction}_{wx}_{group}/0/{self.default_platform}"
+            print("Check your spelling and capitalization. Areas need capitalization example: Finland, Sardinia, Japan, Norway, Indonesia. Stages need correct spelling example: Indonesia mount kawi, not kawaii or kawai")
+
+        url = f"{self.url}/{area}_Stage_{stage}_{direction}_{wx}_{group}/0/{self.default_platform}" 
+        return url
+
+
+    def top_ten(self, area, stage, group, direction="Forward", wx="Dry"):
+        url = self.build_url(area, stage, group, direction, wx) 
         r = requests.get(url)
         r.raise_for_status()
         return r.json()

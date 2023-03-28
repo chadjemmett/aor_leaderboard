@@ -3,7 +3,7 @@ import sys
 from pytest import fixture
 import requests
 from src.art_of_rally_leaderboard.leaderboard import Leaderboard 
-import vcr
+# import vcr
 from .board_entries import API_RESULT
 board = Leaderboard(default_platform=5)
 
@@ -55,15 +55,14 @@ def test_capitalized_word(user_keys, mock_response):
     assert  set(user_keys).issubset(top_10['leaderboard'][0].keys())
     assert len(top_10['leaderboard']) == 10
 
+def test_url_build(capfd):
+    url = board.build_url("Finland", "Palus", "Group2", "Forward", "Dry")
+    assert url == "https://www.funselektorfun.com/artofrally/leaderboard/Finland_Stage_3_Forward_Dry_60s/0/5"
 
-# def test_wrong_argument_value(capfd, mock_response):
-#     top_10 = board.top_ten("Fonland", "palussss", "Group44","forward", "dry")
-#     captured = capfd.readouterr()
-#     assert captured.out == "Check your capitalization or spelling. Stage example: San Benedetto. Group Example: GroupB.\n"
-
-
-
-
-
-
+    input_test = board.build_url("fornland", "Palus", "Group2", "Forward", "Dry")
+    captured = capfd.readouterr()
+    assert captured.out == "Check your spelling and capitalization. Areas need capitalization example: Finland, Sardinia, Japan, Norway, Indonesia. Stages need correct spelling example: Indonesia mount kawi, not kawaii or kawai\n"
+    input_test2 = board.build_url("Finland", "palus", "group2", "Fwd", "dry")
+    captured2 = capfd.readouterr()
+    assert captured.out == "Check your spelling and capitalization. Areas need capitalization example: Finland, Sardinia, Japan, Norway, Indonesia. Stages need correct spelling example: Indonesia mount kawi, not kawaii or kawai\n"
 
