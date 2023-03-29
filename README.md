@@ -15,7 +15,7 @@ Any questions? Contact me on Github at `https://github.com/chadjemmett` and I'm
 
  ``` 
 import art_of_rally_leaderboard  
-board = art_of_rally_leaderboard.Leaderboard(default_platform="2")
+board = art_of_rally_leaderboard.Leaderboard(default_platform=2)
 board.top_ten("Finland", "Palus", "Group2", direction="Forward", wx="Dry")
 print(board)
 
@@ -58,6 +58,13 @@ The values for the Group variable are as follows:
 Area, Stage and group are required. The default for stages is direction = Forward. And wx = Dry
 
 The two options for Direction is Forward or Reverse, and Wx's options are Wet or Dry 
+
+### Roadmap
+    [ ] Human-readable scores. Currently the scores are in this format 142031. In minutes, seconds, and fractions of a second, this translates to 2:22.031. So we need a function that translates that for the Json object. Makes it easier for a human to read.
+    [ ] Individual scores. User passes in their player ID and gets back their score.
+    [ ] Full scoreboard. User wants a full listing of scores from the top down to n. User can see their
+    progression up the leaderboard.
+
 
 
 ### Thanks to...
