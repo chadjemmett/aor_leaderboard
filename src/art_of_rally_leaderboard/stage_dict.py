@@ -1,3 +1,10 @@
+PLATFORM = {
+        "Nintendo Switch": 5,
+        "nintendo switch": 5,
+        "Steam": 2,
+        "steam": 2,
+
+        }
 STAGES = {
         'Finland': {
             "noormarkku": 1,
@@ -66,27 +73,41 @@ STAGES = {
 GROUPS = {
         'Group2': "60s", 
         'group2': "60s", 
+        'Group 2': "60s", 
+        'group 2': "60s", 
 
         'Group3': "70s", 
         'group3': "70s", 
+        'Group 3': "70s", 
+        'group 3': "70s", 
 
         'Group4': "80s",
         'group4': "80s",
+        'Group 4': "80s",
+        'group 4': "80s",
 
         'GroupB': "GroupB",
+        'Group B': "GroupB",
         'groupB': "GroupB",
+        'group B': "GroupB",
         'groupb': "GroupB",
         'Groupb': "GroupB",
+        'Group b': "GroupB",
 
         'GroupS': "GroupS",
+        'Group S': "GroupS",
         'groupS': "GroupS",
         'groups': "GroupS",
+        'group s': "GroupS",
         'Groups': "GroupS",
+        'Group s': "GroupS",
 
         'GroupA': "GroupA",
+        'Group A': "GroupA",
         'groupA': "GroupA",
         'groupa': "GroupA",
-        'Groupa': "GroupA",
+        'group a': "GroupA",
+        'Group a': "GroupA",
         'Vans': "Bonus_Vans",
         'vans': "Bonus_Vans",
         "Triwheeler": "Bonus_Monkey",
